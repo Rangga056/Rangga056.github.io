@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Weather Condition and Status">
+  <meta nama="author" content="Muhammad Rangga Miftahul Falah">
+  
+  <!-- Css Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link
+  rel="icon"
+  type="image/jpg"
+  href="images/logo.jpg"/>
+</head>
+  <title>Eclipse Weather</title>
+</head>
+<body>
+  
+  <main>
+
+    <p class="header">See the weather of the current world easily with <span>Eclipse Weather</span></p>
+
+    <div class="search-bar">
+      <input class="search-input" type="search" name="search-location" id="search-location" placeholder="Search the location">
+      <div class="searchButton">
+        <button id="search-button" class="search-btn "><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #000000;"></i></button>
+      </div>
+    </div>
+
+    <div class="main-container">
+
+      <img src="images/haze.png" alt="weather-icon" id="weather-image">
+
+      <div class="current-condition">
+        <p class="current-weather"></p>
+        <span>at</span>
+        <p class="current-temp"></p>
+      </div>
+
+      <p class="location"><i class="fa-solid fa-location-dot" style="color: #19cc73;"></i></p>
+
+    </div>
+
+    <div class="error-message">
+      <h1>Uh-oh! Something went wrong.</h1>
+
+      <p>
+        It seems we're having trouble fetching the weather data at the moment. This could be due to a network issue or a problem with our weather data provider. Here are a few things you can try:
+      </p>
+
+      <ul>
+        <li>
+          1. Check the name of the location.
+        </li>
+        <li>
+          2. Check your internet connection and try again.
+        </li>
+        <li>
+          3. Refresh the page to retry fetching the data.
+        </li>
+        <li>
+          4. If the issue persists, please come back later. We're working to resolve this as quickly as possible.
+        </li>
+      </ul>
+
+    </div>
+
+  </main>
+
+
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/4b05c7d802.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
