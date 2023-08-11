@@ -19,10 +19,10 @@ html, body{
 
 body{
   width: 100svw;
-  height: 100svh;
+  height: 100vh;
   background-color: var(--bg);
   color: var(--text);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .error-message{
