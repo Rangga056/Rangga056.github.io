@@ -62,6 +62,7 @@ searchBtn.addEventListener("click" ,() => {
       console.log(error)
       errorMessage.style.display = "flex"
     })
+    searchBar.value = "";
   })
 
 searchBar.addEventListener("keypress", (e) => {
@@ -78,6 +79,8 @@ searchBar.addEventListener("keypress", (e) => {
         console.log(error)
         errorMessage.style.display = "flex"
       })
+      searchBar.value = "";
   }
+
 
 })
